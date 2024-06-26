@@ -43,14 +43,14 @@ const Home = () => {
         <h5 className="advise">ADVISE #117</h5>
         {!isLoading && data && (
           <p>
-            <q>
+            
               {data.slip.advice.split('\n').map((line, index) => (
                 <React.Fragment key={index}>
                   {line}
                   <br />
                 </React.Fragment>
               ))}
-            </q>
+            
           </p>
         )}
         {isLoading && <p>Loading...</p>}
